@@ -1,0 +1,167 @@
+.header-img {
+  background-image: url("../assets/images/media_contacts_bg.jpg");
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 120px 0;
+}
+
+.content::before {
+  content: "";
+  background-image: url("../assets/images/bg_vector.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 730px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: -5;
+}
+
+.blue-bg {
+    position: relative;
+    background-color: var(--main-color);
+    width: 518px;
+    height: 520px;
+    top: 5vh;
+    left: 10vw;
+    border-radius: 11px;
+    z-index: 1;
+}
+
+.content-img {
+    position: relative;
+    width: 35%;
+    max-width: 600px;
+    height: 463px;
+    top: 9vh;
+    left: -15vw;
+    border-radius: 11px;
+    z-index: 5;
+    object-fit: cover;
+}
+
+.content-body {
+  width: 50%;
+}
+
+.bold {font-weight:800;}
+
+.line1,
+.line2,
+.line3 {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.line3 .title {
+  display: flex;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.line3 .title:hover {
+  text-decoration: underline;
+}
+
+.line3 .title img {
+  width: 23px;
+  height: 23px;
+  margin-left: 10px;
+}
+
+.content-body .title {
+  font-family: "GT America";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 29.48px;
+  line-height: 36px;
+  color: var(--main-color);
+  margin-bottom: 30px;
+}
+
+.content-body .text {
+  font-family: "GT America";
+  font-style: normal;
+  font-size: 19.44px;
+  color: var(--main-color);
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+  }
+
+  .blue-bg {
+    width: 445px;
+    height: 482px;
+    top: 5vh;
+    left: -10vw;
+  }
+
+  .content-img {
+    width: 77%;
+    max-width: 620px;
+    height: 380px;
+    top: -395px;
+    left: 4vw;
+  }
+
+  .content-body {
+    position: relative;
+    top: -30vh;
+  }
+
+  .line3,
+  .line3 .title {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .blue-bg {
+    width: 353px;
+    height: 381px;
+    top: 20px;
+    left: -5vw;
+  }
+
+  .content-img {
+    width: 66%;
+    max-width: 620px;
+    height: 300px;
+    top: -320px;
+    left: 2vw;
+  }
+
+  .content-body {
+    width: 70%;
+  }
+
+  .line1 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .blue-bg,
+  .content-img {
+    display: none;
+  }
+
+  .content-body {
+    position: initial;
+    top: 0;
+  }
+}

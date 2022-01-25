@@ -1,0 +1,278 @@
+.content {
+  padding: 50px 70px;
+}
+
+.press {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-family: "GT America";
+  color: var(--main-color);
+  font-weight: 275;
+  font-size: 43px;
+  line-height: 52px;
+  margin-bottom: 70px;
+}
+
+.press-itens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.press-itens .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  max-width: 532px;
+}
+
+.press-itens .item .img-wrapper {
+  max-width: 532px;
+  width: 100%;
+  max-height: 354px;
+  height: 100%;
+}
+
+.press-itens .item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+.press-itens .item:hover {
+  cursor: pointer;
+}
+
+.press-itens .item:hover .item-img {
+  transform: scale(1.03);
+}
+
+.press-itens .item:hover .item-title {
+  text-decoration: underline;
+}
+
+.press-itens .item-img,
+.press-itens .item-title {
+  transition: all 0.2s;
+}
+
+.item-category {
+  font-family: "GT America";
+  color: var(--main-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.item-title {
+  font-family: "GT America";
+  color: var(--main-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.item-date {
+  font-family: "GT America";
+  color: var(--dark-grey);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 25px;
+}
+
+.press-all-releases,
+.gallery-access {
+  margin: 40px auto;
+}
+
+.press-all-releases .btn,
+.gallery-access .btn,
+.features .item .item-btn .btn {
+  background-color: var(--main-color);
+  padding: 10px 25px;
+  width: fit-content;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  font-family: "GT America";
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1.5px);
+  opacity: 0.9;
+}
+
+.btn img {
+  margin-left: 10px;
+  width: 12px;
+  height: 12px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(201, 214, 219, 0.3);
+}
+
+.gallery-itens {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.gallery-itens .item {
+  max-width: 412px;
+  margin: 0 15px;
+}
+
+.gallery-itens .item .img-wrapper {
+  max-width: 412px;
+  width: 100%;
+  max-height: 304px;
+  height: 100%;
+}
+
+.gallery-itens .item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+.gallery-itens .item-title {
+  color: var(--main-color-darker);
+  margin-top: 10px;
+  font-family: "GT America";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.7241px;
+  line-height: 21px;
+}
+
+.features {
+  display: flex;
+}
+
+.features.line2 {
+  background-color: #f9f9f9;
+}
+
+.features .item {
+  display: flex;
+  width: 50%;
+  margin: 60px 0;
+}
+
+.features .item .img-wrapper {
+  max-width: 422px;
+  width: 100%;
+  max-height: 394px;
+  height: 100%;
+}
+
+.features .item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+.features .item .item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.features .item .item-info .item-title {
+  font-size: 36px;
+}
+
+.features .item .item-info .item-description {
+  font-family: "GT America";
+  color: var(--dark-grey);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 15px 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .features {
+    flex-direction: column;
+  }
+
+  .features .item {
+    width: 100%;
+  }
+
+  .press-itens .item {
+    margin: 0 15px;
+    margin-bottom: 60px;
+  }
+
+  .gallery-itens {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .gallery-itens .item {
+    margin-bottom: 90px;
+  }
+
+  .gallery-access {
+    margin: 0 auto;
+  }
+
+  .gallery-itens .item .img-wrapper {
+    max-width: 452px;
+    max-height: 354px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .press-itens .item,
+  .press-itens .item .img-wrapper {
+    max-width: unset;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 50px 25px;
+  }
+
+  .features .item {
+    flex-direction: column;
+    margin: 35px 0;
+  }
+
+  .features .item .item-info {
+    width: 90%;
+    padding: 0;
+  }
+
+  .features .item .img-wrapper {
+    margin-bottom: 20px;
+  }
+}

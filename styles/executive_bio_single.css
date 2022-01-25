@@ -1,0 +1,201 @@
+.header-img {
+  background-image: url("../assets/images/executive_bio_bg.jpg");
+}
+
+.dropdown-menus {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 100px;
+  margin-bottom: 30px;
+}
+
+.dropdown-menus select {
+  width: 180px;
+  padding: 8px;
+  margin-right: 20px;
+  border: 1px solid var(--main-color);
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: var(--main-color);
+}
+
+.back-arrow {
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+.back-arrow img {
+  width: 56.72px;
+  height: 32.96px;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  padding: 50px 80px;
+  margin-bottom: 100px;
+}
+
+.bio .image {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+
+.bio .image-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bio .image-icons .text {
+  display: flex;
+  align-items: center;
+  font-family: "GT America";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--main-color);
+  padding: 30px 50px;
+  transition: all 0.2s;
+}
+
+.bio .image-icons .text:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.bio .image-icons .text img {
+  width: 28px;
+  height: 28px;
+  margin-left: 16px;
+}
+
+.bio .profile {
+  width: 470px;
+  height: 410px;
+  border-radius: 11px;
+  object-fit: cover;
+}
+
+.bio .content {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.bio .content .name {
+  font-family: "GT America";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.bio .content .position {
+  font-family: "GT America";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--main-color);
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.bio .content .description {
+  font-family: "GT America";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 31px;
+  color: var(--dark-grey);
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .dropdown-menus {
+    padding: 40px 50px;
+  }
+
+  .back-arrow {
+    width: 25%;
+    padding: 0;
+  }
+
+  .bio {
+    padding: 50px;
+  }
+
+  .bio .profile {
+    width: 370px;
+    height: 310px;
+  }
+
+  .bio .content {
+    width: 45%;
+  }
+
+  .bio .image {
+    margin-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .dropdown-menus {
+    width: 80%;
+  }
+
+  .bio .profile {
+    width: 270px;
+    height: 210px;
+  }
+
+  .bio .content {
+    width: 65%;
+  }
+
+  .bio .content .name {
+    font-size: 28px;
+  }
+
+  .bio .content .position {
+    font-size: 16px;
+  }
+
+  .bio .content .description {
+    font-size: 15px;
+  }
+
+  .bio .image {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .back-arrow {
+    width: 30%;
+  }
+
+  .bio {
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .bio .profile {
+    width: 100%;
+  }
+
+  .bio .image {
+    margin-right: 0;
+  }
+
+  .bio .content {
+    width: 95%;
+  }
+}

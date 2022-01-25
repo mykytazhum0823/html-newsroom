@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "GT America";
+  src: url("../assets/fonts/GT-America-Standard-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/GT-America-Standard-Regular.otf") format("opentype"),
+    url("../assets/fonts/GT-America-Standard-Regular.woff") format("woff"),
+    url("../assets/fonts/GT-America-Standard-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

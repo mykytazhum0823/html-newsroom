@@ -1,0 +1,45 @@
+.footer {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.footer-logo {
+  height: 100px;
+}
+
+.footer-first, .footer-second {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-top: 40px;
+}
+
+.column1, .column2, .column3, .column4 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.footer .link {
+  font-family: "GT America";
+  margin: 8px 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+}
+
+.footer .link.darker {
+  color: var(--dark-grey);
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.footer-second .column-title {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.footer-icons {
+  height: 100px;
+}
